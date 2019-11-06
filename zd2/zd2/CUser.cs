@@ -8,7 +8,10 @@ namespace zd2
     {
         public string Username { get; }
         public string Password { get; }
-        public int ItemsAmount { get; set; }
+        public int toysAmount { get; set; }
+        public int shoePairsAmount { get; set; }
+        public int bulletsAmount { get; set; }
+
 
         public CUser(){}
         public CUser(string _u, string _p)
@@ -17,10 +20,22 @@ namespace zd2
             Password = _p;
         }
 
-        public void produceAnItem()
+        public void produceAToy()
         {
-            ItemsAmount++;
-            Console.WriteLine("To juz " + ItemsAmount + " w tej sesji");
+            toysAmount++;
+            Console.WriteLine("To juz " + toysAmount + " w tej sesji");
+        }
+        
+        public void produceAShoePair()
+        {
+            shoePairsAmount++;
+            Console.WriteLine("To juz " + shoePairsAmount + " w tej sesji");
+        }
+        
+        public void produceABullet()
+        {
+            bulletsAmount++;
+            Console.WriteLine("To juz " + bulletsAmount + " w tej sesji");
         }
     }
 }

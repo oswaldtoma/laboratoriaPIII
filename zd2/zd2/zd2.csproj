@@ -39,6 +39,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CAccountSystem.cs" />
+    <Compile Include="CMainMenu.cs" />
     <Compile Include="CUser.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
